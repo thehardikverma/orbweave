@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Orbweave | Circular Systems Studio — Sensors, Data &amp; AI in Closed Loops</title>
+    <meta name="title" content="Orbweave | Circular Systems Studio — Sensors, Data &amp; AI in Closed Loops">
+    <meta name="description"
+        content="Orbweave is a conceptual circular-systems studio. We weave sensors, data and AI into closed loops that help cities, farms, makers and lodges waste less and run cleaner. From linear to circular.">
+    <meta name="keywords"
+        content="circular economy, climate tech, IoT sensors, AI for sustainability, closed-loop systems, resource efficiency, water loss, urban heat, regenerative agriculture, open source portfolio">
+    <meta name="author" content="Orbweave">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://orbweave.example/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://orbweave.example/">
+    <meta property="og:title" content="Orbweave | Circular Systems Studio — Sensors, Data &amp; AI in Closed Loops">
+    <meta property="og:description"
+        content="Orbweave is a conceptual circular-systems studio. We weave sensors, data and AI into closed loops that help cities, farms, makers and lodges waste less and run cleaner. From linear to circular.">
+    <meta property="og:image" content="https://orbweave.example/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Orbweave">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://orbweave.example/">
+    <meta name="twitter:title" content="Orbweave | Circular Systems Studio — Sensors, Data &amp; AI in Closed Loops">
+    <meta name="twitter:description"
+        content="Orbweave is a conceptual circular-systems studio. We weave sensors, data and AI into closed loops that help cities, farms, makers and lodges waste less and run cleaner. From linear to circular.">
+    <meta name="twitter:image" content="https://orbweave.example/logo.png">
+    <meta name="twitter:site" content="@your_handle">
+    <meta name="twitter:creator" content="@your_handle">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Orbweave",
+        "url": "https://orbweave.example",
+        "logo": "https://orbweave.example/logo.png",
+        "description": "Orbweave weaves sensors, data and AI into closed-loop systems for organisations ready to go from linear to circular.",
+        "foundingDate": "2024",
+        "sameAs": [
+            "https://www.linkedin.com/",
+            "https://x.com/",
+            "https://www.instagram.com/"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "url": "https://orbweave.example/contact.html",
+            "availableLanguage": "English"
+        },
+        "areaServed": "Worldwide",
+        "knowsAbout": [
+            "Circular Economy",
+            "Environmental Sensing",
+            "Applied Machine Learning",
+            "Resource Efficiency",
+            "Climate Adaptation",
+            "Regenerative Systems"
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - WebSite with Search -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Orbweave",
+        "url": "https://orbweave.example",
+        "description": "Circular Systems Studio — Sensors, Data &amp; AI in Closed Loops",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Orbweave"
+        }
+    }
+    </script>
+
+    <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Libraries - Deferred for performance -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <style>
+        html,
+        body {
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        /* Chrome, Safari, Opera */
+        html::-webkit-scrollbar,
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            margin: 0;
+            background: black;
+            overflow-x: hidden;
+        }
+
+        .full-vh {
+            height: 100vh;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .position-relative {
+            position: relative;
+        }
+
+        .position-sticky {
+            position: sticky;
+        }
+
+        .top-0 {
+            top: 0;
+        }
+
+        .isolate {
+            isolation: isolate;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .pe-none {
+            pointer-events: none;
+        }
+
+        .z-1 {
+            z-index: 1;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .containerNO {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #smoke {
+            z-index: 0;
+            display: block;
+        }
+
+        #hero-lightpass {
+            z-index: 0;
+        }
+
+        .scrubContainer {
+            opacity: 0;
+            min-height: 100vh;
+            padding-top: 0;
+        }
+
+        .brindScrubIn {
+            opacity: 0;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+            z-index: 2;
+            opacity: 0.9;
+            pointer-events: none;
+        }
+
+        .text-overlay-desktop {
+            display: block;
+        }
+
+        .text-overlay-desktop .line1 {
+            position: absolute;
+            left: 5%;
+            top: 45%;
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            text-align: left;
+            max-width: 45%;
+            white-space: nowrap;
+        }
+
+        .text-overlay-desktop .line2 {
+            position: absolute;
+            right: 5%;
+            top: 62%;
+            font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+            text-align: right;
+            max-width: 40%;
+        }
+
+        .text-overlay-mobile {
+            display: none;
+        }
+
+        .brand-container {
+            position: absolute;
+            top: 30%;
+            /* Lowered from 25% for desktop */
+            left: 50%;
+            width: 55vw;
+            /* Slightly wider container */
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            pointer-events: auto !important;
+            isolation: isolate;
+        }
+
+        .brand-link {
+            pointer-events: auto !important;
+            display: inline-block;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 101;
+            cursor: pointer;
+        }
+
+        .brand-link:hover {
+            transform: translateY(-5px);
+        }
+
+        .brand-link:hover .brand-logo {
+            opacity: 0.85;
+        }
+
+        .brand-logo {
+            width: clamp(60px, 10vw, 120px);
+            /* Increased size for desktop */
+            height: auto;
+            object-fit: contain;
+            opacity: 1;
+            transition: all 0.3s ease;
+            pointer-events: auto !important;
+            /* Fixed opacity value (0-1 range), higher = brighter */
+        }
+
+        /* ========== BRAND IMAGES RESPONSIVE ========== */
+        /* Tablet (768px - 1024px) */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .brand-container {
+                top: 28%;
+                width: 70vw;
+                /* Wider on tablet */
+                justify-content: center;
+                /* Center the images */
+                gap: 15px;
+                /* Add spacing between images */
+            }
+
+            .brand-logo {
+                width: clamp(55px, 10vw, 100px);
+                /* Slightly larger on tablet */
+            }
+        }
+
+        /* Mobile (< 768px) */
+        @media (max-width: 767px) {
+            .brand-container {
+                top: 30%;
+                /* Adjust vertical position for mobile */
+                width: 90vw;
+                /* Wider container on mobile */
+                justify-content: center;
+                /* Center all images */
+                gap: 10px;
+                /* Spacing between images */
+                flex-wrap: wrap;
+                /* Allow wrapping if needed */
+            }
+
+            .brand-logo {
+                width: clamp(50px, 16vw, 80px);
+                /* Bigger images on mobile */
+                opacity: 1;
+                /* Even brighter on mobile */
+            }
+        }
+
+        /* Small Mobile (< 480px) */
+        @media (max-width: 480px) {
+            .brand-container {
+                top: 20%;
+                width: 100vw;
+                /* Almost full width */
+                gap: 6px;
+            }
+
+            .brand-logo {
+                width: clamp(45px, 18vw, 70px);
+                /* Proportionally larger */
+            }
+        }
+
+        .text-overlay-mobile .line1 {
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            font-size: clamp(2.5rem, 7vw, 4.2rem);
+            text-align: left;
+        }
+
+        .text-overlay-mobile .line2 {
+            position: absolute;
+            left: 5%;
+            top: 55%;
+            font-size: clamp(2.5rem, 7vw, 4.2rem);
+            text-align: left;
+        }
+
+        .text-overlay-mobile .line3 {
+            position: absolute;
+            right: 5%;
+            top: 65%;
+            font-size: clamp(2.5rem, 7vw, 4.2rem);
+            text-align: right;
+        }
+
+        .logo {
+            position: absolute;
+            top: -10%;
+            /* Default for desktop */
+            left: 50%;
+            transform: translateX(-50%);
+            width: clamp(150px, 20vw, 300px);
+            z-index: 1;
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        /* Tablet (768px - 1024px) */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .logo {
+                top: -1%;
+                /* Slightly lower for medium screens */
+                left: 45%;
+                /* Slight left offset for balance */
+                transform: translateX(-50%);
+                /* Still centered horizontally */
+            }
+        }
+
+        /* Mobile (< 768px) */
+        @media (max-width: 767px) {
+            .logo {
+                top: -1%;
+                /* Lower to avoid top UI elements */
+                left: 50%;
+                /* Keep centered */
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Small Mobile (< 480px) */
+        @media (max-width: 479px) {
+            .logo {
+                top: -1%;
+                /* Even lower for very small screens */
+                left: 20%;
+                /* Centered */
+                transform: translateX(-50%);
+                width: clamp(120px, 18vw, 250px);
+                /* Slightly smaller for space */
+            }
+        }
+
+        .center-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            pointer-events: none;
+            width: 100%;
+            max-width: 55rem;
+            /* Matches .container-large from morningside.html */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center-container {
+            position: relative;
+            max-width: 47.5rem;
+            /* Matches .splash-wrapper from morningside.html */
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.6;
+            opacity: 0;
+            yPercent: 100;
+            pointer-events: none;
+            background: transparent;
+            padding: 3rem 3.75rem 3.75rem;
+            /* Matches .splash-wrapper padding from morningside.html */
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+            box-sizing: border-box;
+            margin-top: 5rem;
+            /* Matches .splash-wrapper margin from morningside.html */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        .center-container h1 {
+            position: relative;
+            z-index: 2;
+            font-size: clamp(3rem, 7vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            line-height: 1.3;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+        }
+
+        .center-container p {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+        }
+
+        .center-container p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .text-overlay-desktop .line1 {
+                left: 3%;
+                top: 40%;
+                font-size: clamp(2.7rem, 5.5vw, 4.8rem);
+                max-width: 50%;
+                white-space: nowrap;
+            }
+
+            .text-overlay-desktop .line2 {
+                right: 3%;
+                top: 75%;
+                font-size: clamp(2.2rem, 5vw, 4rem);
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .center-container {
+                background-size: cover;
+                /* Matches morningside.html tablet breakpoint */
+                border-radius: 20px;
+                /* Matches morningside.html tablet breakpoint */
+                margin-top: 4rem;
+                /* Matches morningside.html tablet breakpoint */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .text-overlay-desktop {
+                display: none;
+            }
+
+            .text-overlay-mobile {
+                display: block;
+            }
+
+            .text-overlay-mobile .line1 {
+                left: 3%;
+                top: 48%;
+                font-size: clamp(2.2rem, 8vw, 3.8rem);
+            }
+
+            .text-overlay-mobile .line2 {
+                left: 3%;
+                top: 53%;
+                font-size: clamp(2.2rem, 8vw, 3.8rem);
+            }
+
+            .text-overlay-mobile .line3 {
+                right: 3%;
+                top: 67%;
+                font-size: clamp(2.2rem, 8vw, 3.8rem);
+            }
+
+            .center-wrapper {
+                max-width: calc(100% - 2rem);
+            }
+
+            .center-container {
+                max-width: none;
+                width: 100%;
+                font-size: 1rem;
+                padding: 2rem;
+                /* Matches morningside.html mobile padding */
+                scroll-behavior: smooth;
+                overflow-y: auto;
+            }
+
+            .center-container h1 {
+                font-size: clamp(2.5rem, 8vw, 4rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text-overlay-mobile .line1 {
+                left: 2%;
+                top: 46%;
+                font-size: clamp(2rem, 9vw, 3.5rem);
+            }
+
+            .text-overlay-mobile .line2 {
+                left: 2%;
+                top: 51%;
+                font-size: clamp(2rem, 9vw, 3.5rem);
+            }
+
+            .text-overlay-mobile .line3 {
+                right: 2%;
+                top: 57%;
+                font-size: clamp(2rem, 9vw, 3.5rem);
+            }
+
+            .center-wrapper {
+                max-width: calc(100% - 1.5rem);
+            }
+
+            .center-container {
+                max-width: none;
+                width: 100%;
+                margin-top: 3rem;
+                /* Matches morningside.html smallest mobile */
+                padding: 1.5rem;
+                /* Matches morningside.html smallest mobile */
+                scroll-behavior: smooth;
+                overflow-y: auto;
+            }
+
+            .center-container h1 {
+                font-size: clamp(2rem, 9vw, 3.5rem);
+            }
+        }
+
+        /* Button Styles - Enhanced Responsiveness */
+        .button-container {
+            position: fixed;
+            top: 45px;
+            right: 35px;
+            z-index: 10;
+        }
+
+        /* Premium Glassmorphism Button */
+        .white-button {
+            position: relative;
+            padding: 14px 28px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 100px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            text-decoration: none;
+        }
+
+        /* Animated gradient border */
+        .white-button::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 100px;
+            padding: 2px;
+            background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.3) 0%,
+                    rgba(255, 255, 255, 0) 40%,
+                    rgba(255, 255, 255, 0) 60%,
+                    rgba(255, 255, 255, 0.2) 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        /* Glow effect */
+        .white-button::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 100px;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        /* Button Text */
+        .button-text {
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+
+        /* Button Icon */
+        .button-icon {
+            width: 18px;
+            height: 18px;
+            position: relative;
+            z-index: 2;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            opacity: 0.8;
+        }
+
+        /* Hover Effects */
+        .white-button:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .white-button:hover::before {
+            opacity: 1;
+        }
+
+        .white-button:hover::after {
+            opacity: 1;
+        }
+
+        .white-button:hover .button-icon {
+            transform: translateX(4px) rotate(45deg);
+            opacity: 1;
+        }
+
+        /* Active Effects */
+        .white-button:active {
+            transform: translateY(0);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Button Animation on Load */
+        @keyframes buttonEntrance {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .white-button {
+            animation: buttonEntrance 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s both;
+        }
+
+        /* Notification Toast */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: white;
+            color: #333;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            font-weight: 500;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        /* Responsive Design for Button - Tablet (768px - 1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .button-container {
+                top: 18px;
+                right: 18px;
+            }
+
+            .white-button {
+                padding: 17px 36px;
+                font-size: 1.05rem;
+            }
+
+            .button-icon {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        /* Responsive Design for Button - Mobile (≤ 768px) */
+        @media (max-width: 768px) {
+            .button-container {
+                top: 15px;
+                right: 15px;
+            }
+
+            .white-button {
+                padding: 16px 32px;
+                font-size: 1rem;
+                gap: 8px;
+            }
+
+            .button-icon {
+                width: 18px;
+                height: 18px;
+            }
+
+            .toast {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+                left: 10px;
+                right: 10px;
+                transform: translateX(0) translateY(100px);
+                width: calc(100% - 20px);
+            }
+
+            .toast.show {
+                transform: translateX(0) translateY(0);
+            }
+        }
+
+        /* Responsive Design for Button - Small Mobile (≤ 480px) */
+        @media (max-width: 480px) {
+            .button-container {
+                top: 30px;
+                right: 12px;
+            }
+
+            .white-button {
+                padding: 8px 10px;
+                font-size: 0.50rem;
+                gap: 6px;
+                border-radius: 10px;
+            }
+
+            .button-text {
+                font-size: 0.70rem;
+            }
+
+            .button-icon {
+                width: 10px;
+                height: 10px;
+            }
+
+            .white-button:hover {
+                transform: translateY(-3px);
+            }
+
+            .white-button:active::after {
+                width: 200px;
+                height: 200px;
+            }
+
+            .toast {
+                padding: 10px 16px;
+                font-size: 0.85rem;
+                bottom: 20px;
+            }
+        }
+
+        /* ========== LOADING SCREEN STYLES ========== */
+        .loader-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        .loader-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .loader-logo {
+            width: clamp(120px, 25vw, 200px);
+            height: auto;
+            margin-bottom: 40px;
+            animation:
+                logoFloat 2s ease-in-out infinite,
+                logoGlow 2s ease-in-out infinite alternate;
+            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+            position: relative;
+            will-change: transform, filter;
+        }
+
+        /* Floating animation */
+        @keyframes logoFloat {
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+            }
+
+            50% {
+                transform: translateY(-20px) scale(1.02);
+            }
+        }
+
+        /* Glow pulse animation */
+        @keyframes logoGlow {
+            0% {
+                filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 20px rgba(200, 180, 100, 0.2));
+            }
+
+            50% {
+                filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 60px rgba(200, 180, 100, 0.4)) drop-shadow(0 0 100px rgba(120, 200, 120, 0.2));
+            }
+
+            100% {
+                filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 80px rgba(100, 180, 200, 0.3));
+            }
+        }
+
+        /* Subtle pulse scale */
+        @keyframes logoPulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.85;
+            }
+        }
+
+        /* Subtle 3D rotation */
+        @keyframes logoRotate3D {
+
+            0%,
+            100% {
+                transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+            }
+
+            25% {
+                transform: perspective(1000px) rotateY(5deg) rotateX(2deg);
+            }
+
+            75% {
+                transform: perspective(1000px) rotateY(-5deg) rotateX(-2deg);
+            }
+        }
+
+        /* Animated ring around logo */
+        .loader-logo::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 150%;
+            height: 150%;
+            border: 2px solid transparent;
+            border-top-color: rgba(255, 255, 255, 0.3);
+            border-right-color: rgba(200, 180, 100, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: ringRotate 3s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes ringRotate {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        /* Second ring - counter rotation */
+        .loader-logo::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 180%;
+            height: 180%;
+            border: 1px solid transparent;
+            border-bottom-color: rgba(255, 255, 255, 0.15);
+            border-left-color: rgba(120, 200, 120, 0.15);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: ringRotateReverse 4s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes ringRotateReverse {
+            0% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+        }
+
+        .loader-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .loader-bar-container {
+            width: clamp(200px, 60vw, 400px);
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .loader-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg,
+                    rgba(255, 255, 255, 0.5) 0%,
+                    rgba(255, 255, 255, 0.9) 50%,
+                    rgba(255, 255, 255, 0.5) 100%);
+            border-radius: 10px;
+            transition: width 0.3s ease;
+            position: relative;
+        }
+
+        .loader-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.4),
+                    transparent);
+            animation: shimmer 1.5s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .loader-text {
+            color: rgba(255, 255, 255, 0.6);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(12px, 3vw, 16px);
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .loader-percent {
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(24px, 5vw, 36px);
+            font-weight: 700;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-overlay" id="loader">
+        <img src="logo.png" alt="Orbweave" class="loader-logo">
+        <div class="loader-content">
+            <div class="loader-bar-container">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <span class="loader-text">Weaving the Loop</span>
+            <span class="loader-percent" id="loaderPercent">0%</span>
+        </div>
+    </div>
+
+    <main class="main" id="main" style="background: hsl(0, 0%, 0%);">
+        <div class="content">
+            <div class="position-relative scrubContainer overflow-hidden brindScrubIn" style="opacity: 0;"
+                data-function="scrub-live">
+                <section class="py-0 full-vh position-sticky top-0 isolate d-flex align-items-center pe-none z-1">
+                    <img src="logo.png" alt="Logo" class="logo">
+                    <canvas class="overflow-hidden bg-image scrubHero pe-none" id="hero-lightpass"
+                        style="opacity: 0.5; filter: grayscale(0%);"></canvas>
+                    <div class="text-overlay">
+                        <div class="brand-container">
+                            <a href="tidewell/index.html" class="brand-link"><img src="images/brands/brand-1.png"
+                                    alt="Tidewell" class="brand-logo"></a>
+                            <a href="reloom/index.html" class="brand-link"><img src="images/brands/brand-2.png"
+                                    alt="Reloom" class="brand-logo"></a>
+                            <a href="groundwork/index.html" class="brand-link"><img src="images/brands/brand-3.png"
+                                    alt="Groundwork" class="brand-logo"></a>
+                            <a href="canopy/index.html" class="brand-link"><img src="images/brands/brand-4.png"
+                                    alt="Canopy Commons" class="brand-logo"></a>
+                            <a href="driftwood/index.html" class="brand-link"><img src="images/brands/brand-5.png"
+                                    alt="Driftwood Lodges" class="brand-logo"></a>
+                        </div>
+                        <div class="text-overlay-desktop">
+                            <div class="line1">Orbweave - not a single thread,</div>
+                            <div class="line2">But the Whole Loop</div>
+                        </div>
+                        <div class="text-overlay-mobile">
+                            <div class="line1">Orbweave</div>
+                            <div class="line2">- not a single thread,</div>
+                            <div class="line3">But the Whole Loop</div>
+                        </div>
+                    </div>
+                    <div class="center-wrapper">
+                        <div class="center-container">
+                            <canvas id="smoke"></canvas>
+                            <h1>From Linear to Circular</h1>
+                            <p>At Orbweave, we believe most of the waste in the world isn't malicious — it's invisible. Water leaks underground, rooftops bake in silence, good gear gets binned, and nobody sees the numbers until the bill arrives.</p>
+                            <p>The old model is a straight line: take, make, use, throw away. It is expensive, fragile and running out of road. Every organisation now faces a quiet but defining choice — keep pouring resources down the line, or bend it into a loop.</p>
+                            <p>Loops need senses. Cheap sensors let a system feel what is happening; data lets it remember; AI lets it notice patterns no person has time to watch for. Used wisely, it doesn’t replace the people who care for a place — it gives them better eyes and ears.</p>
+                            <p>That’s where we come in.</p>
+                            <p>We’re not a think-tank that publishes reports about circularity. We build what works now — the sensor networks, models and small, useful tools that close one loop at a time. Then we hand the keys to your team, with open code and clear docs, so the loop keeps turning without us.</p>
+                            <p>We call this becoming Loop-First — not just measuring waste, but designing it out.</p>
+                            <p>That’s why Orbweave exists: to turn circularity from a slogan into something you can see on a dashboard and feel on a utility bill. We don’t just install sensors. We weave the threads — hardware, data, AI and people — into one resilient whole.</p>
+                            <p>The future isn’t a straight line. It’s a loop — and it belongs to those willing to close it.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Button -->
+    <div class="button-container">
+        <a href="contact.html" class="white-button" id="getInTouchBtn">
+            <span class="button-text">Start a loop</span>
+            <svg class="button-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Smoke animation script
+        (function () {
+            const canvas = document.getElementById('smoke');
+            if (!canvas) return;
+
+            const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
+            if (!gl) { console.error('WebGL not supported'); return; }
+
+            function resize() {
+                const parent = canvas.parentElement; if (!parent) return;
+                const w = parent.clientWidth, h = parent.clientHeight;
+                if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; }
+                gl.viewport(0, 0, canvas.width, canvas.height);
+                if (setResolutionUniforms) setResolutionUniforms();
+            }
+            window.addEventListener('resize', resize);
+
+            function compileShader(type, source) {
+                const sh = gl.createShader(type);
+                gl.shaderSource(sh, source); gl.compileShader(sh);
+                if (!gl.getShaderParameter(sh, gl.COMPILE_STATUS)) { console.error('Shader compile error:', gl.getShaderInfoLog(sh)); gl.deleteShader(sh); return null; }
+                return sh;
+            }
+            function createProgram(vsSrc, fsSrc) {
+                const vs = compileShader(gl.VERTEX_SHADER, vsSrc); const fs = compileShader(gl.FRAGMENT_SHADER, fsSrc);
+                if (!vs || !fs) return null;
+                const pr = gl.createProgram(); gl.attachShader(pr, vs); gl.attachShader(pr, fs); gl.linkProgram(pr);
+                if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) { console.error('Program link error:', gl.getProgramInfoLog(pr)); return null; }
+                return pr;
+            }
+            function createTexture(w, h) {
+                const t = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, t);
+                gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, w, h, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+                gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+                gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+                gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+                gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+                return t;
+            }
+            function createFramebuffer(t) {
+                const f = gl.createFramebuffer(); gl.bindFramebuffer(gl.FRAMEBUFFER, f);
+                gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, t, 0);
+                const s = gl.checkFramebufferStatus(gl.FRAMEBUFFER);
+                if (s !== gl.FRAMEBUFFER_COMPLETE) console.error('Framebuffer not complete:', s);
+                gl.bindFramebuffer(gl.FRAMEBUFFER, null); return f;
+            }
+            function setBuffer(pr, buf) {
+                gl.useProgram(pr); const loc = gl.getAttribLocation(pr, 'aPosition');
+                gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+            }
+
+            const VS = `#ifdef GL_FRAGMENT_PRECISION_HIGH\nprecision highp float;\n#else\nprecision mediump float;\n#endif\n\nattribute vec2 aPosition;\nvarying vec2 vUv;\n\nvoid main() {\n  vUv = 0.5 * aPosition + 0.5;\n  gl_Position = vec4(aPosition, 0.0, 1.0);\n}`;
+
+            const FS_RENDER = `#ifdef GL_FRAGMENT_PRECISION_HIGH\nprecision highp float;\n#else\nprecision mediump float;\n#endif\n\nvarying vec2 vUv;\nuniform float uTime;\nuniform vec2 uResolution;\nuniform sampler2D uNoiseTexture;\nuniform sampler2D uTrailTexture;\n\n#define STAR 5.0\n#define FLARE 4.0\n#define COLOR vec3(0.2, 0.3, 0.8)\n#define STAR_NUM 12.0\n#define STAR_AMP 0.5\n#define STAR_SPEED 0.01\n#define STAR_VEL vec2(1.0, 0.0)\n#define STAR_FREQ 8.0\n#define STAR_EXP 1.5\n#define GLOW_STRENGTH 12.0\n#define GLOW_RED vec3(0.5, 0.2, 0.2)\n#define GLOW_BLUE vec3(0.3, 0.3, 0.6)\n#define GLOW_TURBULENCE 0.4\n#define GLOW_TINT 3.0\n#define LIGHT_EXP 30.0\n#define TRAIL_EXP vec3(1.4, 1.2, 1.0)\n#define TRAIL_STRENGTH 0.4\n#define DITHER 0.01\n#define DITHER_RES 64.0\n\nvec3 gamma_encode(vec3 lrgb) { return sqrt(lrgb); }\n\nvec2 turbulence(vec2 p, float freq, float num) {\n  mat2 rot = mat2(0.6, -0.8, 0.8, 0.6);\n  vec2 turb = vec2(0.0);\n  for (float i = 0.0; i < STAR_NUM; i++) {\n    if (i >= num) break;\n    vec2 pos = p + turb + STAR_SPEED * i * uTime * STAR_VEL;\n    float phase = freq * (pos * rot).y + STAR_SPEED * uTime * freq;\n    turb += rot[0] * sin(phase) / freq;\n    rot *= mat2(0.6, -0.8, 0.8, 0.6);\n    freq *= STAR_EXP;\n  }\n  return turb;\n}\n\nvec3 star(inout vec2 p) {\n  #define STAR_STRETCH 0.7\n  #define STAR_CURVE 0.5\n  vec2 suv = p * 2.0 - 1.0;\n  vec2 right = suv - vec2(1.0, 0.0);\n  right.x *= STAR_STRETCH * uResolution.x / uResolution.y;\n  float factor = 1.0 + 0.4 * sin(9.0 * suv.y) * sin(5.0 * (suv.x + 5.0 * uTime * STAR_SPEED));\n  vec2 turb = right + factor * STAR_AMP * turbulence(right, STAR_FREQ, STAR_NUM);\n  turb.x -= STAR_CURVE * suv.y * suv.y;\n  float fade = max(4.0 * suv.y * suv.y - suv.x + 1.2, 0.001);\n  float atten = fade * max(0.5 * turb.x, -turb.x);\n  float ft = 0.4 * uTime;\n  vec2 fp = 8.0 * (turb + 0.5 * STAR_VEL * ft);\n  fp *= mat2(0.4, -0.3, 0.3, 0.4);\n  float f = cos(fp.x) * sin(fp.y) - 0.5;\n  float flare = f * f + 0.5 * suv.y * suv.y - 1.5 * turb.x + 0.6 * cos(0.42 * ft + 1.6 * turb.y) * cos(0.31 * ft - turb.y);\n  vec3 col = 0.1 * COLOR * (STAR / (atten * atten) + FLARE / (flare * flare));\n  const vec3 chrom = vec3(0.0, 0.1, 0.2);\n  col *= exp(p.x *\n    cos(turb.y * 5.0 + 0.4 * (uTime + turb.x * 1.0) + chrom) *\n    cos(turb.y * 7.0 - 0.5 * (uTime - turb.x * 1.5) + chrom) *\n    cos(turb.y * 9.0 + 0.6 * (uTime + turb.x * 2.0) + chrom));\n  return col;\n}\n\nvoid main() {\n  vec2 duv = 0.9 * gl_FragCoord.xy / DITHER_RES * mat2(0.8, -0.6, 0.6, 0.8);\n  float dither = texture2D(uNoiseTexture, duv).r - 0.5;\n  vec2 ratio = min(uResolution.yx / uResolution.xy, 1.0);\n  vec4 trailTex = texture2D(uTrailTexture, vUv);\n  vec2 suv = vUv * 2.0 - 1.0;\n  vec2 distort = vec2(0.0);\n  float glow = 0.0;\n  vec2 dir = vec2(0.0);\n  vec2 starUv = vUv + distort;\n  starUv += 0.3 * (trailTex.rg - 0.5) * trailTex.b * ratio;\n  vec3 col = star(starUv);\n  float vig = 1.0 - abs(suv.y);\n  vig *= 0.5 + 0.5 * suv.x;\n  col *= vig * vig;\n  col /= 1.0 + col; col = clamp(col, 0.0, 1.0); col = gamma_encode(col);\n  float yy = suv.y + 0.03; yy = max(1.0 - 1e1 * yy * yy / max(0.5 + 1.5 * starUv.x, 0.1), 0.0);\n  float light = max(0.5 + 0.5 * starUv.x, 0.0) * yy; light += 2.0 * (1.0 - light) * glow;\n  float tint = GLOW_TINT * dir.x * glow; vec3 hue = mix(GLOW_RED, GLOW_BLUE, 1.0 + suv.x + tint);\n  float alpha = 1.0 - (1.0 - pow(yy, LIGHT_EXP)) * glow; vec3 rim = GLOW_STRENGTH * light * light * light * light * alpha * (0.5 + 0.5 * suv.x) * hue;\n  rim /= (1.0 + rim); col += (1.0 - col) * rim * rim;\n  col += TRAIL_STRENGTH * hue * pow(trailTex.aaa, TRAIL_EXP);\n  col += DITHER * dither; gl_FragColor = vec4(col, 1.0);\n}`;
+
+            const FS_TRAIL = `#ifdef GL_FRAGMENT_PRECISION_HIGH\nprecision highp float;\n#else\nprecision mediump float;\n#endif\n\nvarying vec2 vUv;\nuniform float uTime;\nuniform float uDeltaTime;\nuniform vec2 uMouse;\nuniform vec2 uMouseVelocity;\nuniform vec2 uResolution;\nuniform sampler2D uNoiseTexture;\nuniform sampler2D uPreviousFrame;\n\n#define TRAIL_FALLOFF 9000.0\n#define FADE_EXP vec4(0.02, 0.02, 0.1, 0.1)\n#define SCROLL_SPEED 0.0005\n#define DISTORT_SPEED 0.02\n#define TURB_NUM 8.0\n#define TURB_AMP 0.6\n#define TURB_SPEED 0.5\n#define TURB_VEL vec2(0.1, 0.0)\n#define TURB_FREQ 50.0\n#define TURB_EXP 1.3\n\nvec2 turbulence(vec2 p) {\n  mat2 rot = mat2(0.6, -0.8, 0.8, 0.6); vec2 turb = vec2(0.0); float freq = TURB_FREQ;\n  for (float i = 0.0; i < TURB_NUM; i++) {\n    vec2 pos = p + TURB_SPEED * i * uTime * TURB_VEL;\n    float phase = freq * (pos * rot).y + TURB_SPEED * uTime * freq * 0.1;\n    turb += rot[0] * sin(phase) / freq; rot *= mat2(0.6, -0.8, 0.8, 0.6); freq *= TURB_EXP;\n  } return turb;\n}\n\nvoid main() {\n  vec2 ratio = min(uResolution.yx / uResolution.xy, 1.0);\n  float delta = 144.0 * uDeltaTime;\n  vec2 scroll = SCROLL_SPEED * vec2(1.0, vUv.y - 0.5) * ratio;\n  vec2 turb = turbulence((vUv + scroll) / ratio);\n  vec2 distort = DISTORT_SPEED * turb;\n  vec2 distortedUv = vUv + delta * scroll + delta * distort * ratio;\n  vec4 prev = texture2D(uPreviousFrame, distortedUv);\n  vec2 trailA = vUv + 0.01 * delta * turb * ratio - uMouse; vec2 trailB = -uMouseVelocity;\n  float trailD = dot(trailB, trailB); vec2 trailDif = trailA / ratio; float falloff = 0.0;\n  if (trailD > 0.0) { float f = clamp(dot(trailA, trailB) / trailD, 0.0, 1.0); trailDif -= f * trailB / ratio; falloff = (1.0 + 1.0) / (1.0 + TRAIL_FALLOFF * dot(trailDif, trailDif)); falloff *= min(trailD / (0.001 + trailD), 1.0); }\n  vec2 suv = (uMouse - uMouseVelocity) * 2.0 - 1.0; float vig = 1.0 - abs(suv.y); vig *= 0.5 + 0.5 * suv.x;\n  vec2 nuv = gl_FragCoord.xy / 64.0 + uTime * vec2(7.1, 9.1); float noise = texture2D(uNoiseTexture, nuv).r;\n  vec4 fade = pow(vec4(noise), FADE_EXP); fade = exp(-2.0 * fade * uDeltaTime); vec4 decay = mix(vec4(0.5, 0.5, 0.0, 0.0), prev, fade);\n  vec4 col = decay; vec2 vel = (-trailB) / (0.01 + length(trailB));\n  col.rg -= (0.5 - abs(decay.rg - 0.5)) * (falloff * vel); col.ba += falloff * (1.0 - decay.ba) * vec2(1.0, vig * vig);\n  col += (noise - 0.5) / 255.0; gl_FragColor = col;\n}`;
+
+            const verts = new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]);
+            const vbo = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, vbo); gl.bufferData(gl.ARRAY_BUFFER, verts, gl.STATIC_DRAW);
+
+            let progRender = createProgram(VS, FS_RENDER);
+            let progTrail = createProgram(VS, FS_TRAIL);
+            if (!progRender || !progTrail) {
+                const vsm = 'attribute vec2 aPosition; void main(){ gl_Position = vec4(aPosition,0.0,1.0);}';
+                const fsm = 'precision mediump float; void main(){ gl_FragColor = vec4(0.5,0.5,0.0,1.0);}';
+                progRender = progRender || createProgram(vsm, fsm);
+                progTrail = progTrail || createProgram(vsm, fsm);
+            }
+
+            setBuffer(progRender, vbo); setBuffer(progTrail, vbo);
+
+            const uR = {
+                time: gl.getUniformLocation(progRender, 'uTime'),
+                resolution: gl.getUniformLocation(progRender, 'uResolution'),
+                noiseTex: gl.getUniformLocation(progRender, 'uNoiseTexture'),
+                trailTex: gl.getUniformLocation(progRender, 'uTrailTexture')
+            };
+            const uT = {
+                time: gl.getUniformLocation(progTrail, 'uTime'),
+                deltaTime: gl.getUniformLocation(progTrail, 'uDeltaTime'),
+                resolution: gl.getUniformLocation(progTrail, 'uResolution'),
+                mouse: gl.getUniformLocation(progTrail, 'uMouse'),
+                mouseVelocity: gl.getUniformLocation(progTrail, 'uMouseVelocity'),
+                noiseTex: gl.getUniformLocation(progTrail, 'uNoiseTexture'),
+                prevFrame: gl.getUniformLocation(progTrail, 'uPreviousFrame')
+            };
+
+            let qualityScale = 1.0;
+            let rt = [null, null]; let fb = [null, null];
+            function allocTargets() {
+                for (let i = 0; i < 2; i++) {
+                    if (rt[i]) gl.deleteTexture(rt[i]); if (fb[i]) gl.deleteFramebuffer(fb[i]);
+                    rt[i] = createTexture(Math.floor(canvas.width * qualityScale), Math.floor(canvas.height * qualityScale));
+                    fb[i] = createFramebuffer(rt[i]);
+                }
+            }
+
+            let noiseTex = null; let lastTime = 0; let dt = 0; let ping = 0;
+            let mouse = [0.5, 0.5]; let mouseLag = [0.5, 0.5]; let mouseVel = [0.0, 0.0];
+
+            // === VISIBILITY & SCROLL CONTROL ===
+            let isVisible = false;      // Is the canvas visible on screen?
+            let isScrolling = false;    // Is the user currently scrolling?
+            let animationId = null;     // Store the animation frame ID
+            let scrollTimeout = null;   // Timeout for scroll detection
+
+            // Function to check if animation should run
+            function shouldAnimate() {
+                return isVisible && !isScrolling;
+            }
+
+            // Function to start the animation loop
+            function startAnimation() {
+                if (animationId === null && shouldAnimate()) {
+                    lastTime = 0; // Reset time to avoid big delta jump
+                    animationId = requestAnimationFrame(frame);
+                }
+            }
+
+            // Function to stop the animation loop
+            function stopAnimation() {
+                if (animationId !== null) {
+                    cancelAnimationFrame(animationId);
+                    animationId = null;
+                }
+            }
+
+            // Intersection Observer - detect when canvas is visible
+            const visibilityObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    isVisible = entry.isIntersecting;
+                    if (isVisible) {
+                        console.log('🟢 Smoke canvas visible - starting animation');
+                        startAnimation();
+                    } else {
+                        console.log('🔴 Smoke canvas hidden - stopping animation');
+                        stopAnimation();
+                    }
+                });
+            }, {
+                threshold: 0.1  // Trigger when 10% of canvas is visible
+            });
+
+            // Scroll detection - pause during scroll for smoother performance
+            // window.addEventListener('scroll', () => {
+            //     if (!isScrolling) {
+            //         isScrolling = true;
+            //         stopAnimation();
+            //     }
+
+            //     // Clear existing timeout
+            //     clearTimeout(scrollTimeout);
+
+            //     // Resume animation 150ms after scrolling stops
+            //     scrollTimeout = setTimeout(() => {
+            //         isScrolling = false;
+            //         if (isVisible) {
+            //             startAnimation();
+            //         }
+            //     }, 0);
+            // }, { passive: true });  // passive: true improves scroll performance
+
+            // Generate procedural noise texture
+            const noiseSize = 64;
+            const noiseData = new Uint8Array(noiseSize * noiseSize * 4);
+            for (let i = 0; i < noiseSize * noiseSize; i++) {
+                const val = Math.random() * 255;
+                noiseData[i * 4] = val;
+                noiseData[i * 4 + 1] = val;
+                noiseData[i * 4 + 2] = val;
+                noiseData[i * 4 + 3] = 255;
+            }
+            noiseTex = gl.createTexture();
+            gl.bindTexture(gl.TEXTURE_2D, noiseTex);
+            gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, noiseSize, noiseSize, 0, gl.RGBA, gl.UNSIGNED_BYTE, noiseData);
+            gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+            gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+            gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT);
+            gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.REPEAT);
+
+            function setResolutionUniforms() {
+                gl.useProgram(progRender);
+                gl.uniform2f(uR.resolution, canvas.width, canvas.height);
+                gl.useProgram(progTrail);
+                gl.uniform2f(uT.resolution, canvas.width, canvas.height);
+                allocTargets();
+            }
+
+            function toUv(clientX, clientY) { const rect = canvas.getBoundingClientRect(); return [(clientX - rect.left) / canvas.clientWidth, 1 - (clientY - rect.top) / canvas.clientHeight]; }
+            function onMouseMove(e) { mouse = toUv(e.clientX, e.clientY); }
+            window.addEventListener('mousemove', onMouseMove, { passive: true });
+
+            function frame(t) {
+                // Check if we should continue animating
+                if (!shouldAnimate()) {
+                    animationId = null;
+                    return;
+                }
+
+                dt = lastTime > 0 ? Math.min((t - lastTime) * 0.001, 0.05) : 0.0167; lastTime = t;
+                const dv = [mouse[0] - mouseLag[0], mouse[1] - mouseLag[1]]; mouseLag[0] += dv[0]; mouseLag[1] += dv[1];
+                const pong = (ping + 1) % 2;
+
+                gl.bindFramebuffer(gl.FRAMEBUFFER, fb[pong]);
+                gl.useProgram(progTrail);
+                gl.uniform1f(uT.time, 0.001 * t);
+                gl.uniform1f(uT.deltaTime, dt);
+                gl.uniform2f(uT.mouse, mouse[0], mouse[1]);
+                gl.uniform2f(uT.mouseVelocity, dv[0], dv[1]);
+                gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, noiseTex); gl.uniform1i(uT.noiseTex, 0);
+                gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, rt[ping]); gl.uniform1i(uT.prevFrame, 1);
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+
+                gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+                gl.useProgram(progRender);
+                gl.uniform1f(uR.time, 0.001 * t);
+                gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, noiseTex); gl.uniform1i(uR.noiseTex, 0);
+                gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, rt[pong]); gl.uniform1i(uR.trailTex, 1);
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+
+                ping = pong;
+                animationId = requestAnimationFrame(frame);
+            }
+
+            function start() {
+                resize();
+                setResolutionUniforms();
+                // Start observing the canvas for visibility
+                visibilityObserver.observe(canvas);
+                // Animation will start when observer detects canvas is visible
+            }
+
+            start();
+
+            resize();
+        })();
+    </script>
+
+    <script>
+        function scrub() {
+            const canvas = document.getElementById("hero-lightpass");
+            const context = canvas.getContext("2d");
+            const containerEl = document.querySelector(".center-container");
+            const canvasEl = document.querySelector("#hero-lightpass");
+
+            let isMobile = window.innerWidth <= 768;
+
+            function setCanvasSize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            setCanvasSize();
+
+            const frameCount = 212;
+            const images = [];
+            const airpods = { frame: 0 };
+
+            const currentFrame = (index) => `/images/compressed_scrub${(index).toString().padStart(3, '0')}.jpg.webp`;
+
+            // === LOADING PROGRESS TRACKING ===
+            const loaderOverlay = document.getElementById('loader');
+            const loaderBar = document.getElementById('loaderBar');
+            const loaderPercent = document.getElementById('loaderPercent');
+            let loadedCount = 0;
+            let allImagesLoaded = false;
+
+            function updateProgress() {
+                loadedCount++;
+                const percent = Math.floor((loadedCount / frameCount) * 100);
+                loaderBar.style.width = `${percent}%`;
+                loaderPercent.textContent = `${percent}%`;
+
+                // When all images are loaded
+                if (loadedCount >= frameCount && !allImagesLoaded) {
+                    allImagesLoaded = true;
+                    onAllImagesLoaded();
+                }
+            }
+
+            function hideLoader() {
+                loaderOverlay.classList.add('hidden');
+                setTimeout(() => {
+                    loaderOverlay.style.display = 'none';
+                }, 800);
+            }
+
+            // === PROGRESSIVE IMAGE LOADING ===
+            // Load critical frames first (first 50), then rest in background
+            // 50 frames covers ~24% of animation - enough for initial view
+            const criticalFrameCount = 50;
+            let criticalLoaded = 0;
+            const loadedFlags = new Array(frameCount).fill(false); // Track which frames are loaded
+
+            function loadImage(index) {
+                return new Promise((resolve) => {
+                    const img = new Image();
+                    img.onload = () => {
+                        loadedFlags[index] = true;
+                        updateProgress();
+                        if (index < criticalFrameCount) {
+                            criticalLoaded++;
+                            // Start experience when critical frames are ready
+                            if (criticalLoaded === criticalFrameCount && !allImagesLoaded) {
+                                initScrollTrigger();
+                            }
+                        }
+                        resolve(img);
+                    };
+                    img.onerror = () => {
+                        updateProgress();
+                        resolve(img);
+                    };
+                    img.src = currentFrame(index);
+                    images[index] = img;
+                });
+            }
+
+            // Load critical frames in batches of 15 for faster initial load
+            const batchSize = 15;
+            let currentBatch = 0;
+
+            function loadCriticalBatch() {
+                const startIdx = currentBatch * batchSize;
+                const endIdx = Math.min(startIdx + batchSize, criticalFrameCount);
+
+                const batchPromises = [];
+                for (let i = startIdx; i < endIdx; i++) {
+                    batchPromises.push(loadImage(i));
+                }
+
+                // When this batch is done, load next batch immediately (no delay)
+                Promise.all(batchPromises).then(() => {
+                    currentBatch++;
+                    if (currentBatch * batchSize < criticalFrameCount) {
+                        loadCriticalBatch();
+                    }
+                });
+            }
+
+            // Start loading critical frames in batches
+            loadCriticalBatch();
+
+            // Load remaining frames in background (faster staggering)
+            function loadRemainingFrames() {
+                let index = criticalFrameCount;
+                function loadNext() {
+                    if (index < frameCount) {
+                        loadImage(index);
+                        index++;
+                        // Faster stagger - load one image every 15ms
+                        setTimeout(loadNext, 15);
+                    }
+                }
+                loadNext();
+            }
+
+            // Start loading remaining immediately after critical batches queued
+            setTimeout(loadRemainingFrames, 100);
+
+            // === THROTTLED RENDER FOR MOBILE ===
+            let renderPending = false;
+            function throttledRender() {
+                if (renderPending) return;
+                renderPending = true;
+                requestAnimationFrame(() => {
+                    render();
+                    renderPending = false;
+                });
+            }
+
+            // Use throttled render on mobile, normal on desktop
+            const renderFunction = isMobile ? throttledRender : render;
+
+            // === SCROLL TRIGGER INITIALIZATION ===
+            let scrollTriggerInitialized = false;
+
+            function initScrollTrigger() {
+                if (scrollTriggerInitialized) return;
+                scrollTriggerInitialized = true;
+
+                // Hide loader and start experience
+                hideLoader();
+
+                setTimeout(() => {
+                    render();
+
+                    const contentHeight = containerEl.scrollHeight;
+                    const viewportHeight = window.innerHeight;
+                    const animationScrollDistance = viewportHeight * 4;
+                    const contentScrollDistance = Math.max(0, contentHeight - viewportHeight);
+                    const totalScrollDistance = animationScrollDistance + contentScrollDistance;
+
+                    gsap.set(".center-container", { yPercent: 100, opacity: 0 });
+
+                    // Faster scrub on mobile for smoother feel
+                    const scrubValue = isMobile ? 0.8 : 1.6;
+
+                    const masterTL = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: ".scrubContainer",
+                            start: "top top",
+                            end: `+=${totalScrollDistance}px`,
+                            pin: true,
+                            scrub: scrubValue,
+                            anticipatePin: 1,
+                            fastScrollEnd: true,  // Optimize for fast scrolling
+                            preventOverlaps: true,
+                            onUpdate: (self) => {
+                                const centerWrapper = document.querySelector(".center-wrapper");
+                                // Reset pointer-events and hide when at the beginning so brand links work
+                                if (self.progress < 0.15) {
+                                    containerEl.style.pointerEvents = "none";
+                                    centerWrapper.style.pointerEvents = "none";
+                                    centerWrapper.style.visibility = "hidden";
+                                } else {
+                                    centerWrapper.style.visibility = "visible";
+                                }
+                            }
+                        },
+                        onUpdate: renderFunction,  // Use throttled render on mobile
+                    });
+
+                    // Frame scrub
+                    masterTL.to(airpods, {
+                        frame: frameCount - 1,
+                        duration: 0.4,
+                        snap: "frame",
+                        ease: "none",
+                    }, 0);
+
+                    // Text exit animations
+                    if (isMobile) {
+                        masterTL.to(".text-overlay-mobile .line1", {
+                            x: "-100vw",
+                            opacity: 0,
+                            duration: 0.2,
+                            ease: "none",
+                        }, 0.2);
+                        masterTL.to(".text-overlay-mobile .line2", {
+                            x: "-100vw",
+                            opacity: 0,
+                            duration: 0.2,
+                            ease: "none",
+                        }, 0.2);
+                        masterTL.to(".text-overlay-mobile .line3", {
+                            x: "100vw",
+                            opacity: 0,
+                            duration: 0.2,
+                            ease: "none",
+                        }, 0.2);
+                    } else {
+                        masterTL.to(".text-overlay-desktop .line1", {
+                            x: "-100vw",
+                            opacity: 0,
+                            duration: 0.15,
+                            ease: "none",
+                        }, 0.2);
+                        masterTL.to(".text-overlay-desktop .line2", {
+                            x: "100vw",
+                            opacity: 0,
+                            duration: 0.3,
+                            ease: "none",
+                        }, 0.2);
+                    }
+
+                    // Grayscale effect
+                    masterTL.to(canvasEl, {
+                        filter: 'grayscale(1)',
+                        duration: 0.4,
+                        ease: "none",
+                    }, 0);
+
+                    // Canvas opacity
+                    masterTL.to(canvasEl, {
+                        opacity: 0.1,
+                        duration: 0.3,
+                        ease: "none",
+                    }, 0.2);
+
+                    // Container appear
+                    masterTL.to(containerEl, {
+                        yPercent: 0,
+                        opacity: 1,
+                        duration: 0.3,
+                        ease: "power1.out",
+                    }, 0.2);
+
+                    // Enable pointer events
+                    masterTL.call(() => {
+                        containerEl.style.pointerEvents = "auto";
+                        document.querySelector(".center-wrapper").style.pointerEvents = "auto";
+                    }, null, 0.2);
+
+                    // Content scroll
+                    masterTL.to(".center-container", {
+                        y: `-${contentScrollDistance}px`,
+                        duration: 0.4,
+                        ease: "power2.out",
+                    }, 0.6);
+
+                    // Initial reveal animations
+                    gsap.to('.brindScrubIn', {
+                        opacity: 1,
+                        duration: 0.8,
+                        delay: 0.2,
+                        ease: "none"
+                    });
+                    gsap.from('.brindScrubIn canvas', {
+                        scale: 1.02,
+                        duration: 1,
+                        delay: 0.2,
+                        ease: "expo.out",
+                    });
+                    gsap.from('.text-overlay', {
+                        opacity: 0,
+                        y: 30,
+                        duration: 1,
+                        delay: 0.4,
+                        ease: "expo.out"
+                    });
+                    gsap.from('.logo', {
+                        opacity: 0,
+                        y: -30,
+                        duration: 1,
+                        delay: 0.3,
+                        ease: "expo.out"
+                    });
+                }, 50);
+            }
+
+            function onAllImagesLoaded() {
+                console.log('✅ All images loaded!');
+                // If ScrollTrigger wasn't initialized yet, do it now
+                if (!scrollTriggerInitialized) {
+                    initScrollTrigger();
+                }
+            }
+
+            function render() {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                let frame = Math.min(Math.floor(airpods.frame), frameCount - 1);
+                let img = images[frame];
+
+                // FALLBACK: If frame isn't loaded yet, find the closest loaded frame
+                if (!img || !img.complete || !img.naturalWidth) {
+                    // Search backwards for the last loaded frame
+                    for (let i = frame - 1; i >= 0; i--) {
+                        if (images[i] && images[i].complete && images[i].naturalWidth) {
+                            img = images[i];
+                            break;
+                        }
+                    }
+                }
+
+                if (!img || !img.complete || !img.naturalWidth) return;
+
+                const imgRatio = img.width / img.height;
+                const canvasRatio = canvas.width / canvas.height;
+
+                let drawWidth, drawHeight, offsetX = 0, offsetY = 0;
+
+                if (canvasRatio > imgRatio) {
+                    drawWidth = canvas.width;
+                    drawHeight = canvas.width / imgRatio;
+                    offsetY = (canvas.height - drawHeight) / 2;
+                } else {
+                    drawHeight = canvas.height;
+                    drawWidth = canvas.height * imgRatio;
+                    offsetX = (canvas.width - drawWidth) / 2;
+                }
+
+                context.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+            }
+
+            window.addEventListener("resize", () => {
+                isMobile = window.innerWidth <= 768;
+                setCanvasSize();
+                render();
+            });
+
+            ScrollTrigger.addEventListener("refresh", () => render());
+
+            gsap.set('#hero-lightpass', { x: 0, y: 0, scale: 1, force3D: true });
+            gsap.registerPlugin(ScrollTrigger);
+        }
+
+        // Initialize when DOM is ready (vanilla JS - no jQuery needed)
+        document.addEventListener('DOMContentLoaded', () => {
+            gsap.registerPlugin(ScrollTrigger);
+            scrub();
+        });
+
+        // Button JS - with null checks for safety
+        const button = document.getElementById('getInTouchBtn');
+        const toast = document.getElementById('toast');
+
+        if (button) {
+            button.addEventListener('click', function () {
+                // Show toast notification
+                if (toast) {
+                    toast.classList.add('show');
+                    setTimeout(() => {
+                        toast.classList.remove('show');
+                    }, 3000);
+                }
+
+                // Create ripple effect
+                const ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                this.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 600);
+            });
+        }
+
+        // Add ripple effect styles dynamically
+        const style = document.createElement('style');
+        style.textContent = `
+            .ripple {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.7);
+                transform: scale(0);
+                animation: ripple-animation 0.6s ease-out;
+                z-index: 0;
+            }
+            
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+    <!-- Orbweave Chatbot -->
+    <script src="js/chatbot.js"></script>
+</body>
+
+</html>

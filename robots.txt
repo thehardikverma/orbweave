@@ -1,0 +1,18 @@
+# robots.txt for Orbweave
+# https://orbweave.example
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://orbweave.example/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow administrative or private paths
+Disallow: /api/
+Disallow: /.git/
+Disallow: /.vercel/
+Disallow: /node_modules/
+Disallow: /.vscode/

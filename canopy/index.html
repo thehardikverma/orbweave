@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Canopy Commons | AI Retrofit Planning for Urban Heat | Orbweave</title>
+    <meta name="title" content="Canopy Commons | AI Retrofit Planning for Urban Heat | Orbweave">
+    <meta name="description"
+        content="Conceptual case study: how rooftop heat mapping and a resident AI assistant helped a 25-building housing co-op cut peak rooftop heat by 35%.">
+    <meta name="keywords"
+        content="urban heat, green roofs, building retrofit, thermal mapping, housing co-op, AI planning, Orbweave case study, Canopy Commons">
+    <meta name="author" content="Orbweave">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://orbweave.example/canopy/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../logo.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://orbweave.example/canopy/">
+    <meta property="og:title" content="Canopy Commons | AI Retrofit Planning for Urban Heat | Orbweave">
+    <meta property="og:description"
+        content="Conceptual case study: how rooftop heat mapping and a resident AI assistant helped a 25-building housing co-op cut peak rooftop heat by 35%.">
+    <meta property="og:image" content="https://orbweave.example/logo.png">
+    <meta property="og:site_name" content="Orbweave">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://orbweave.example/canopy/">
+    <meta name="twitter:title" content="Canopy Commons | AI Retrofit Planning for Urban Heat | Orbweave">
+    <meta name="twitter:description"
+        content="Conceptual case study: how rooftop heat mapping and a resident AI assistant helped a 25-building housing co-op cut peak rooftop heat by 35%.">
+    <meta name="twitter:image" content="https://orbweave.example/logo.png">
+    <meta name="twitter:site" content="@your_handle">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+
+    <!-- Structured Data - Case Study -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Canopy Commons: AI Retrofit Planning Success Story",
+        "description": "How Canopy Commons cut peak rooftop heat by 35% using AI heat mapping and a resident assistant.",
+        "author": {
+            "@type": "Organization",
+            "name": "Orbweave",
+            "url": "https://orbweave.example"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Orbweave",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://orbweave.example/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://orbweave.example/canopy/"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "AI Retrofit Planning for Urban Heat"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="../index.html" class="logo-link">
+            <img src="../logo.png" alt="Orbweave" style="height:100px;width:auto;">
+        </a>
+        <a href="../index.html" class="back-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back to Home
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="floating-pins" id="floatingPins"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-breadcrumb">
+                <span>Case Studies</span>
+                <span class="breadcrumb-divider">/</span>
+                <span class="breadcrumb-current">Canopy Commons</span>
+            </div>
+
+            <div class="hero-badge">
+                <span class="badge-icon">🏠</span>
+                <span>AI RETROFIT PLANNING</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="title-line">Turn Hot Rooftops Into</span>
+                <span class="title-line">Green Ones with AI: <span class="highlight">Canopy Commons</span></span>
+                <span class="title-line">Cut Peak Roof Heat by <span class="highlight-gold">35%</span></span>
+            </h1>
+
+            <p class="hero-subtitle">
+                See how heat mapping and a resident assistant turned stalled retrofit plans into cooler homes for a 25-building housing co-op.
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="#solution" class="btn btn-primary">
+                    <span>Map Your Rooftops</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#impact" class="btn btn-secondary">
+                    <span class="play-icon">▶</span>
+                    <span>View Results</span>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-value" data-value="35">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Cooler Rooftops</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-value" data-value="1.2">0</span><span class="stat-suffix">M</span>
+                    <span class="stat-label">kWh Saved</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-value" data-value="12">0</span><span class="stat-suffix">hrs</span>
+                    <span class="stat-label">Saved Weekly</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="visual-frame">
+                <div class="frame-glow"></div>
+                <img src="images/hero_map.webp" alt="AI rooftop heat map (illustration)"
+                    class="hero-image">
+                <div class="visual-overlay">
+                    <div class="overlay-badge">
+                        <span class="pulse"></span>
+                        <span>Live Heat Mapping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Challenge Section -->
+    <section class="challenge" id="challenge">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">THE CHALLENGE</span>
+                <h2 class="section-title">Leaky Buildings in a Warming City</h2>
+                <p class="section-desc">
+                    Canopy Commons' 25 co-op buildings house young families in a fast-warming city, but their retrofit plans kept stalling.
+                </p>
+            </div>
+
+            <div class="challenge-grid">
+                <div class="challenge-visual">
+                    <img src="images/challenge.webp" alt="Retrofit pipeline challenge (illustration)"
+                        class="challenge-image">
+                </div>
+
+                <div class="challenge-stats">
+                    <div class="pain-point" data-delay="0">
+                        <div class="pain-icon">📉</div>
+                        <div class="pain-content">
+                            <span class="pain-value">20%</span>
+                            <span class="pain-label">Hotter summers vs. 2010</span>
+                        </div>
+                    </div>
+
+                    <div class="pain-point" data-delay="0.1">
+                        <div class="pain-icon">🎯</div>
+                        <div class="pain-content">
+                            <span class="pain-value">12%</span>
+                            <span class="pain-label">Roofs with a plan</span>
+                        </div>
+                    </div>
+
+                    <div class="pain-point" data-delay="0.2">
+                        <div class="pain-icon">📧</div>
+                        <div class="pain-content">
+                            <span class="pain-value">&lt;5%</span>
+                            <span class="pain-label">Residents engaged</span>
+                        </div>
+                    </div>
+
+                    <div class="pain-point" data-delay="0.3">
+                        <div class="pain-icon">⏰</div>
+                        <div class="pain-content">
+                            <span class="pain-value">60%</span>
+                            <span class="pain-label">Time lost to paperwork</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="founder-quote">
+                <div class="quote-card">
+                    <div class="quote-icon">"</div>
+                    <blockquote>
+                        Our buildings are solid, but energy leaks everywhere. We need smarter planning to know where each euro does the most good.
+                    </blockquote>
+                    <div class="quote-author">
+                        <div class="author-avatar">CC</div>
+                        <div class="author-info">
+                            <span class="author-name">Board Chair</span>
+                            <span class="author-title">Canopy Commons Co-op</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hurdles">
+                <span class="hurdles-label">Typical Retrofit Hurdles:</span>
+                <div class="hurdles-tags">
+                    <span class="hurdle-tag">Patchy building data</span>
+                    <span class="hurdle-tag">Endless grant paperwork</span>
+                    <span class="hurdle-tag">Resident fatigue</span>
+                    <span class="hurdle-tag">Spreadsheet sprawl</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="solution">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">OUR SOLUTION</span>
+                <h2 class="section-title">AI-Powered Retrofit Planning Engine</h2>
+                <p class="section-desc">
+                    A suite of AI tools designed to score, plan, and deliver building upgrades with precision targeting.
+                </p>
+            </div>
+
+            <div class="solution-visual-wrapper">
+                <img src="images/solution.webp" alt="AI retrofit planning workflow (illustration)"
+                    class="solution-main-image">
+            </div>
+
+            <div class="solution-features">
+                <div class="feature-card" data-feature="1">
+                    <div class="feature-number">01</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Thermal Rooftop Scoring</h3>
+                    <p class="feature-desc">
+                        Satellite and sensor heat maps rank every roof. "Building 7 hits 61°C—a green roof cuts that by 30°C."
+                    </p>
+                    <ul class="feature-list">
+                        <li>Satellite thermal imagery + rooftop sensors</li>
+                        <li>Built-in cost/benefit modelling</li>
+                        <li>Grant database integration</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-feature="2">
+                    <div class="feature-number">02</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Resident Assistant</h3>
+                    <p class="feature-desc">
+                        A 24/7 multilingual assistant that explains upgrades and collects resident votes.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Before/after roof previews</li>
+                        <li>Resident voting &amp; feedback</li>
+                        <li>Answers in six languages</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" data-feature="3">
+                    <div class="feature-number">03</div>
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Integrated Loop Toolkit</h3>
+                    <p class="feature-desc">
+                        Complete pipeline from scoring to installation with continuous monitoring.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Score → Plan → Build pipeline</li>
+                        <li>Quarterly energy audits</li>
+                        <li>Models that learn every season</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="workflow-pipeline">
+                <div class="pipeline-step">
+                    <div class="step-icon">🎯</div>
+                    <span>Score Roofs</span>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step">
+                    <div class="step-icon">💬</div>
+                    <span>Plan Together</span>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step">
+                    <div class="step-icon">🤝</div>
+                    <span>Build &amp; Measure</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="impact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">THE IMPACT</span>
+                <h2 class="section-title">Cooler by Design</h2>
+                <p class="section-desc">
+                    From leaky buildings to a cooling network—Canopy Commons' numbers tell the story.
+                </p>
+            </div>
+
+            <div class="impact-metrics">
+                <div class="metric-card metric-primary">
+                    <div class="metric-visual">
+                        <div class="metric-ring" data-progress="83">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="ring-bg" cx="50" cy="50" r="45" />
+                                <circle class="ring-progress" cx="50" cy="50" r="45" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="metric-content">
+                        <span class="metric-before">12%</span>
+                        <span class="metric-arrow">→</span>
+                        <span class="metric-after">22%</span>
+                    </div>
+                    <span class="metric-label">Roofs With Funded Plans</span>
+                    <span class="metric-change">+83% increase</span>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">📧</div>
+                    <div class="metric-content">
+                        <span class="metric-before">&lt;5%</span>
+                        <span class="metric-arrow">→</span>
+                        <span class="metric-after">32%</span>
+                    </div>
+                    <span class="metric-label">Residents Actively Engaged</span>
+                    <span class="metric-change">+540% increase</span>
+                </div>
+
+                <div class="metric-card metric-highlight">
+                    <div class="metric-icon">💰</div>
+                    <div class="metric-value">
+                        <span class="counter" data-value="35">0</span>%
+                    </div>
+                    <span class="metric-label">Lower Peak Rooftop Temperature</span>
+                    <span class="metric-extra">€1.2M in retrofit grants unlocked</span>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">⏱️</div>
+                    <div class="metric-value">
+                        <span class="counter" data-value="12">0</span> hrs
+                    </div>
+                    <span class="metric-label">Reclaimed Weekly per Volunteer</span>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">👥</div>
+                    <div class="metric-value">
+                        <span class="counter" data-value="28">0</span>%
+                    </div>
+                    <span class="metric-label">Drop in Summer Energy Bills</span>
+                    <span class="metric-extra">Cooler homes = happier residents</span>
+                </div>
+            </div>
+
+            <div class="impact-visual">
+                <img src="images/impact.webp" alt="Impact visual (illustration)"
+                    class="impact-image">
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="testimonial-quote">"</div>
+                    <blockquote>
+                        Our top-floor flat used to be unbearable in July. This summer the kids actually slept—and our energy bill went down.
+                    </blockquote>
+                </div>
+                <div class="testimonial-author">
+                    <img src="images/resident.webp" alt="Resident illustration" class="author-image">
+                    <div class="author-details">
+                        <span class="author-name">Resident</span>
+                        <span class="author-role">Canopy Commons, Building 7</span>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Orbweave Section -->
+    <section class="why-orbweave" id="why">
+        <div class="section-container">
+            <div class="why-content">
+                <span class="section-tag">WHY ORBWEAVE</span>
+                <h2 class="why-title">
+                    Combine Heat Mapping with a
+                    <span class="highlight">Resident AI</span> for a Powerhouse
+                    <span class="highlight-gold">Retrofit Plan</span>
+                </h2>
+                <p class="why-desc">
+                    Transform your buildings with AI that finds the hottest roofs, explains every upgrade, and lets your team focus on building.
+                </p>
+
+                <div class="why-features">
+                    <div class="why-feature">
+                        <span class="why-icon">🎯</span>
+                        <span>Smart Roof Scoring</span>
+                    </div>
+                    <div class="why-feature">
+                        <span class="why-icon">🤖</span>
+                        <span>24/7 Resident Assistant</span>
+                    </div>
+                    <div class="why-feature">
+                        <span class="why-icon">📊</span>
+                        <span>Grant Integration</span>
+                    </div>
+                    <div class="why-feature">
+                        <span class="why-icon">📈</span>
+                        <span>Continuous Optimization</span>
+                    </div>
+                </div>
+
+                <div class="cta-group">
+                    <a href="../contact.html" class="btn btn-large btn-primary">
+                        <span>Get Started</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <a href="../contact.html" class="btn btn-large btn-ghost">
+                        <span>Schedule Demo</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="trust-badges">
+                <div class="badge">
+                    <span class="badge-value">500+</span>
+                    <span class="badge-label">Sensors Deployed</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-value">98%</span>
+                    <span class="badge-label">Partner Satisfaction</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-value">24/7</span>
+                    <span class="badge-label">Monitoring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <a href="#" class="footer-link">
+                    <span class="footer-arrow">←</span>
+                    <span>Back to All Case Studies</span>
+                </a>
+            </div>
+
+            <div class="related-studies">
+                <span class="related-label">Related Case Studies</span>
+                <div class="related-cards">
+                    <a href="/reloom/" class="related-card">
+                        <span class="related-icon">♻️</span>
+                        <div class="related-content">
+                            <span class="related-title">Reloom</span>
+                            <span class="related-desc">Circular Gear AI Grading</span>
+                        </div>
+                        <span class="related-arrow">→</span>
+                    </a>
+                    <a href="/tidewell/" class="related-card">
+                        <span class="related-icon">💧</span>
+                        <div class="related-content">
+                            <span class="related-title">Tidewell</span>
+                            <span class="related-desc">Water Network Acoustic AI</span>
+                        </div>
+                        <span class="related-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-disclaimer">
+                <p>Conceptual example with hypothetical metrics for illustration purposes.</p>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="Orbweave" style="height:200px;width:auto;">
+                    </a>
+                </div>
+                <div class="footer-legal">
+                    <span>© 2026 Orbweave. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

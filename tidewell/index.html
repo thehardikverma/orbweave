@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Tidewell Water Co-op | Acoustic AI Leak Detection Case Study | Orbweave</title>
+    <meta name="title" content="Tidewell Water Co-op | Acoustic AI Leak Detection Case Study | Orbweave">
+    <meta name="description"
+        content="Conceptual case study: how acoustic sensors and AI helped a 15-town water co-operative cut water loss by 62% and recover $180K a year.">
+    <meta name="keywords"
+        content="water loss, leak detection, acoustic sensors, AI for utilities, non-revenue water, circular water, Orbweave case study, Tidewell">
+    <meta name="author" content="Orbweave">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://orbweave.example/tidewell/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../logo.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://orbweave.example/tidewell/">
+    <meta property="og:title" content="Tidewell Water Co-op | Acoustic AI Leak Detection Case Study | Orbweave">
+    <meta property="og:description"
+        content="Conceptual case study: how acoustic sensors and AI helped a 15-town water co-operative cut water loss by 62% and recover $180K a year.">
+    <meta property="og:image" content="https://orbweave.example/logo.png">
+    <meta property="og:site_name" content="Orbweave">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://orbweave.example/tidewell/">
+    <meta name="twitter:title" content="Tidewell Water Co-op | Acoustic AI Leak Detection Case Study | Orbweave">
+    <meta name="twitter:description"
+        content="Conceptual case study: how acoustic sensors and AI helped a 15-town water co-operative cut water loss by 62% and recover $180K a year.">
+    <meta name="twitter:image" content="https://orbweave.example/logo.png">
+    <meta name="twitter:site" content="@your_handle">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+
+    <!-- Structured Data - Case Study -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Tidewell Water Co-op: Acoustic AI Leak Detection Story",
+        "description": "How acoustic AI cut water loss by 62% and recovered $180K a year for a 15-town water co-operative.",
+        "author": {
+            "@type": "Organization",
+            "name": "Orbweave",
+            "url": "https://orbweave.example"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Orbweave",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://orbweave.example/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://orbweave.example/tidewell/"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Acoustic AI for Water Networks"
+        }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-content">
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <svg class="loader-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+            <span class="loader-text">Tidewell</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="../index.html" class="logo-link">
+            <img src="../logo.png" alt="Orbweave" style="height:100px;width:auto;">
+        </a>
+        <a href="../index.html" class="back-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back to Home
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <!-- Floating Particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Water Network Case Study</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="title-line line-1">From <span class="highlight">40% Water Loss</span></span>
+                <span class="title-line line-2">to <span class="highlight-alt">Closed-Loop Supply:</span></span>
+                <span class="title-line line-3">Sensors That <span class="gradient-text">Hear the Leaks</span></span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Tidewell recovered <strong>$180K</strong> in lost water by listening to its own pipes. See how acoustic AI keeps 15 towns supplied, compliant, and leak-aware.
+            </p>
+
+            <div class="hero-cta-group">
+                <button class="btn btn-primary" id="audioDemoBtn">
+                    <span class="btn-content">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+                            <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
+                        </svg>
+                        Hear a Leak
+                    </span>
+                    <span class="btn-glow"></span>
+                </button>
+                <a href="#impact" class="btn btn-secondary">
+                    <span>View Results</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-value="62">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Water Loss Reduction</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-prefix">$</span><span class="stat-number" data-value="180">0</span><span
+                        class="stat-suffix">K</span>
+                    <span class="stat-label">Value Recovered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-value="89">0</span>
+                    <span class="stat-label">Customer Trust Score</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="visual-container">
+                <div class="waveform-container">
+                    <canvas id="waveformCanvas"></canvas>
+                    <div class="waveform-glow"></div>
+                </div>
+                <div class="visual-card">
+                    <img src="images/hero.webp" alt="Tidewell network dashboard (illustration)" loading="eager">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="floating-element fe-1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                        <line x1="12" y1="19" x2="12" y2="23" />
+                    </svg>
+                    <span>Acoustic AI Active</span>
+                </div>
+                <div class="floating-element fe-2">
+                    <div class="pulse-indicator"></div>
+                    <span>Regulator Ready</span>
+                </div>
+                <div class="floating-element fe-3">
+                    <span class="metric">85%</span>
+                    <span>Auto-Located</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Client Overview -->
+    <section class="client-overview" id="overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-image">
+                    <div class="image-frame">
+                        <img src="images/crew.webp" alt="Network Operations Lead" loading="lazy">
+                        <div class="frame-border"></div>
+                    </div>
+                    <div class="image-caption">
+                        <span class="caption-name">Network Operations Lead</span>
+                        <span class="caption-title">Tidewell Water Co-op</span>
+                    </div>
+                </div>
+
+                <div class="overview-content">
+                    <span class="section-label">About Tidewell</span>
+                    <h2 class="section-title">15-Town Water Co-operative</h2>
+                    <p class="overview-text">
+                        Tidewell is a member-owned water co-operative supplying 15 coastal towns. Their mission: clean, affordable water, without wasting a drop of what they treat and pump.
+                    </p>
+                    <div class="overview-stats">
+                        <div class="o-stat">
+                            <span class="o-stat-number">15</span>
+                            <span class="o-stat-label">Towns</span>
+                        </div>
+                        <div class="o-stat">
+                            <span class="o-stat-number">500+</span>
+                            <span class="o-stat-label">Km of Mains</span>
+                        </div>
+                        <div class="o-stat">
+                            <span class="o-stat-number">50K+</span>
+                            <span class="o-stat-label">Households Served</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Challenge Section -->
+    <section class="challenge-section" id="challenge">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Challenge</span>
+                <h2 class="section-title">The Network Was Bleeding Water</h2>
+                <p class="section-subtitle">
+                    Despite decades of careful stewardship, Tidewell faced hidden losses that threatened supply, budgets and crew wellbeing.
+                </p>
+            </div>
+
+            <div class="challenge-grid">
+                <div class="challenge-card challenge-main">
+                    <div class="challenge-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 8v4l3 3" />
+                            <circle cx="12" cy="12" r="10" />
+                        </svg>
+                    </div>
+                    <div class="challenge-content">
+                        <h3>40% Non-Revenue Water</h3>
+                        <p>Treated, pumped water vanished underground before it ever reached a tap.</p>
+                        <div class="challenge-metric">
+                            <span class="metric-value">$250K</span>
+                            <span class="metric-label">Lost Value Yearly</span>
+                        </div>
+                    </div>
+                    <div class="challenge-visual">
+                        <div class="no-show-bar">
+                            <div class="bar-fill" style="--fill: 40%"></div>
+                            <span class="bar-label">40% Water Loss</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Crew Burnout Crisis</h3>
+                    <p>Crews walked 500+ km of mains by ear, losing 20+ hours a week each.</p>
+                    <div class="burnout-indicator">
+                        <span class="burnout-value">25%</span>
+                        <span class="burnout-label">Crew Turnover</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                    </div>
+                    <h3>Reporting Hurdles</h3>
+                    <p>Paper logs led to error-prone leak reports and regulatory risk.</p>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            <line x1="9" y1="10" x2="15" y2="10" />
+                        </svg>
+                    </div>
+                    <h3>Night-Time Blind Spots</h3>
+                    <p>Bursts that started after hours ran unnoticed until morning.</p>
+                </div>
+            </div>
+
+            <div class="quote-block">
+                <div class="quote-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                    </svg>
+                </div>
+                <blockquote>
+                    "We're water people, not detectives. Every hidden leak is wasted energy and chemicals, and our crews are exhausted. Scaling means smarter networks, not more shovels."
+                </blockquote>
+                <cite>
+                    <img src="images/crew.webp" alt="Operations lead illustration">
+                    <span>
+                        <strong>Network Operations Lead</strong>
+                        Head of Network Operations, Tidewell
+                    </span>
+                </cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution Section -->
+    <section class="solution-section" id="solution">
+        <div class="solution-bg">
+            <div class="sol-gradient"></div>
+            <div class="sol-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Solution</span>
+                <h2 class="section-title">Acoustic AI with Patience Built-In</h2>
+                <p class="section-subtitle">
+                    We clipped low-power listeners onto the pipes and trained models that don't just hear noise—they understand it.
+                </p>
+            </div>
+
+            <div class="solution-showcase">
+                <div class="solution-visual">
+                    <div class="voice-demo">
+                        <div class="demo-screen">
+                            <img src="images/acoustic-ai.webp" alt="Acoustic sensing visual" loading="lazy">
+                            <div class="demo-overlay">
+                                <div class="waveform-bars">
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-controls">
+                            <button class="demo-play" id="playDemo">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3" />
+                                </svg>
+                            </button>
+                            <div class="demo-waveform">
+                                <canvas id="demoWaveform"></canvas>
+                            </div>
+                            <span class="demo-duration">0:45</span>
+                        </div>
+                    </div>
+
+                    <div class="conversation-preview">
+                        <div class="conversation-bubble ai">
+                            <span class="bubble-label">Leak Agent</span>
+                            <p>"Sensor 214 hears a steady hiss near Harbour Road—2.1 kHz for 40 minutes. Confidence 92%."</p>
+                        </div>
+                        <div class="conversation-bubble patient">
+                            <span class="bubble-label">Night Operator</span>
+                            <p>"Could it just be the pump station? It's been noisy all week..."</p>
+                        </div>
+                        <div class="conversation-bubble ai empathetic">
+                            <span class="bubble-label">Leak Agent</span>
+                            <p>"Good thought—I checked. The pump signature is different. Shall I book a crew for 6 AM and text the 40 homes on that main?"</p>
+                            <span class="empathy-tag">Anomaly Detection Active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 16v-4" />
+                                <path d="M12 8h.01" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Acoustic Fingerprinting</h4>
+                            <p>Models tuned to tell leaks from traffic, pumps and rain—quietly, all night.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Privacy-Safe by Design</h4>
+                            <p>Only pipe acoustics are captured—no voices, no households. The only leaks we find are in pipes.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Smart Severity Triage</h4>
+                            <p>Ranks bursts by risk and escalates to on-call engineers when it matters.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Crew Scheduling &amp; Notices</h4>
+                            <p>Integrations for work orders, GIS maps and customer notifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-highlight">
+                        <span class="highlight-number">85%</span>
+                        <span class="highlight-text">Leaks Located Automatically</span>
+                        <p>With engineers stepping in for the tricky 15%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workflow-section">
+                <h3 class="workflow-title">Integrated Loop Toolkit</h3>
+
+                <div class="workflow-timeline">
+                    <div class="workflow-item">
+                        <div class="workflow-number">01</div>
+                        <div class="workflow-content">
+                            <h4>Acoustic Listeners</h4>
+                            <p>Clip-on sensors stream pipe sounds to an edge model every night</p>
+                        </div>
+                    </div>
+                    <div class="workflow-connector">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="workflow-number">02</div>
+                        <div class="workflow-content">
+                            <h4>Customer Notices</h4>
+                            <p>"Water off on your street 9–11 AM for a repair" texts, sent only to affected homes</p>
+                        </div>
+                    </div>
+                    <div class="workflow-connector">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div class="workflow-item">
+                        <div class="workflow-number">03</div>
+                        <div class="workflow-content">
+                            <h4>Live Network Map</h4>
+                            <p>99% sensor uptime with district-level loss tracking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Impact Section -->
+    <section class="impact-section" id="impact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Impact</span>
+                <h2 class="section-title">Results That Hold Water</h2>
+                <p class="section-subtitle">
+                    Measurable outcomes that prove the power of a network that listens.
+                </p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card primary">
+                    <div class="impact-visual">
+                        <div class="chart-container">
+                            <canvas id="noShowChart"></canvas>
+                        </div>
+                        <div class="chart-legend">
+                            <span class="legend-item before">Before: 40%</span>
+                            <span class="legend-item after">After: 15%</span>
+                        </div>
+                    </div>
+                    <div class="impact-content">
+                        <h3>Water Loss Plummeted</h3>
+                        <div class="impact-metric">
+                            <span class="metric-from">40%</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                            <span class="metric-to">15%</span>
+                        </div>
+                        <p>62% less water lost, freeing capacity for thousands more homes.</p>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon revenue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="12" y1="1" x2="12" y2="23" />
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                    </div>
+                    <h3>Value Recovered</h3>
+                    <span class="impact-number">$180K</span>
+                    <p>Water that used to soak into the ground now reaches taps.</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon calls">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </div>
+                    <h3>Leaks Auto-Located</h3>
+                    <span class="impact-number">120<small>/mo</small></span>
+                    <p>With 85% pinpointed to within two metres.</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon time">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h3>Time Saved</h3>
+                    <span class="impact-number">15<small>hrs/wk</small></span>
+                    <p>Per crew, redirected to proactive pipe renewal.</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon access">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                        </svg>
+                    </div>
+                    <h3>Faster Repairs</h3>
+                    <span class="impact-number">30%</span>
+                    <p>Quicker from first hiss to fixed pipe.</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon nps">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </div>
+                    <h3>Customer Trust</h3>
+                    <div class="nps-compare">
+                        <span class="nps-before">72</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                        <span class="nps-after">89</span>
+                    </div>
+                    <p>Trust rose as outages became shorter and were announced in advance.</p>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon turnover">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Crew Turnover</h3>
+                    <div class="turnover-compare">
+                        <span class="turnover-before">25%</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                        <span class="turnover-after">8%</span>
+                    </div>
+                    <p>Turnover dropped as 3 AM call-outs became rare.</p>
+                </div>
+            </div>
+
+            <!-- Testimonial -->
+            <div class="testimonial-section">
+                <div class="testimonial-card">
+                    <div class="testimonial-bg">
+                        <img src="images/resident.webp" alt="Night Operator" loading="lazy">
+                        <div class="testimonial-overlay"></div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                        </div>
+                        <blockquote>
+                            "I got a text before the water went off, and it was back on before lunch. I didn't even know my street had a leak."
+                        </blockquote>
+                        <cite>
+                            <span class="cite-dash">—</span>
+                            <span class="cite-source">Anonymous Resident Survey Response</span>
+                        </cite>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expansion Banner -->
+            <div class="expansion-banner">
+                <div class="expansion-content">
+                    <div class="expansion-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <div class="expansion-text">
+                        <h4>Expansion Success</h4>
+                        <p>Tidewell connected <strong>2 new towns</strong> with <strong>zero new pumping capacity</strong> thanks to water the loop saved.</p>
+                    </div>
+                </div>
+                <div class="expansion-visual">
+                    <div class="clinic-dots">
+                        <span class="dot existing"></span>
+                        <span class="dot existing"></span>
+                        <span class="dot existing"></span>
+                        <span class="dot new pulse"></span>
+                        <span class="dot new pulse"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-wrapper">
+                <div class="dashboard-content">
+                    <span class="section-label">Real-Time Monitoring</span>
+                    <h2 class="section-title">See Every Metric That Matters</h2>
+                    <p>Our dashboard gives you complete visibility into sensor health, district water balance, and crew efficiency—all in one place.</p>
+                    <ul class="dashboard-features">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Real-time acoustic analytics</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>District water-balance tracking</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>99% sensor uptime</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Regulator-ready audit trails</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dashboard-image">
+                    <div class="dashboard-frame">
+                        <div class="frame-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/dashboard.webp" alt="Tidewell network dashboard" loading="lazy">
+                    </div>
+                    <div class="dashboard-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Orbweave Section -->
+    <section class="why-section" id="cta">
+        <div class="container">
+            <div class="why-content">
+                <span class="section-label">Why Orbweave?</span>
+                <h2 class="section-title">Every Loop, One Partner</h2>
+                <p class="why-text">
+                    Acoustic AI shines solo, but pairs with smart meters and pump-energy tracking for a truly circular utility. From pipes to pumps to people—we've got every loop covered.
+                </p>
+
+                <div class="channel-icons">
+                    <div class="channel-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span>Pipes</span>
+                    </div>
+                    <div class="channel-connector"></div>
+                    <div class="channel-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                        <span>Pumps</span>
+                    </div>
+                    <div class="channel-connector"></div>
+                    <div class="channel-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <span>People</span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-primary btn-large">
+                    <span class="btn-content">
+                        Start Your Free Audit
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                    <span class="btn-glow"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#" class="footer-back">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    <span>Back to All Concepts</span>
+                </a>
+
+                <div class="footer-related">
+                    <span class="related-label">Related Case Studies</span>
+                    <div class="related-links">
+                        <a href="#" class="related-link">
+                            <span class="related-icon">🌱</span>
+                            <span>Groundwork</span>
+                            <span class="related-tag">Regenerative Farming</span>
+                        </a>
+                        <a href="#" class="related-link">
+                            <span class="related-icon">🏨</span>
+                            <span>Driftwood Lodges</span>
+                            <span class="related-tag">Eco-Lodges</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="Orbweave" style="height:200px;width:auto;">
+                    </a>
+                </div>
+                <p class="footer-disclaimer">
+                    Conceptual showcase—hypothetical metrics for inspiration.
+                    Results may vary based on implementation specifics.
+                </p>
+                <p class="footer-copyright">
+                    © 2026 Orbweave. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

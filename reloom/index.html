@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Reloom: AI Condition Grading for Circular Commerce | Orbweave</title>
+    <meta name="title" content="Reloom: AI Condition Grading for Circular Commerce | Orbweave">
+    <meta name="description"
+        content="Conceptual case study: how AI condition grading helped an outdoor-gear resale marketplace grow resale 28% and halve abandoned trade-ins.">
+    <meta name="keywords"
+        content="circular commerce, resale, trade-in, AI condition grading, computer vision, repair, reuse, Orbweave case study, Reloom">
+    <meta name="author" content="Orbweave">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://orbweave.example/reloom/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../logo.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://orbweave.example/reloom/">
+    <meta property="og:title" content="Reloom: AI Condition Grading for Circular Commerce | Orbweave">
+    <meta property="og:description"
+        content="Conceptual case study: how AI condition grading helped an outdoor-gear resale marketplace grow resale 28% and halve abandoned trade-ins.">
+    <meta property="og:image" content="https://orbweave.example/logo.png">
+    <meta property="og:site_name" content="Orbweave">
+    <meta property="article:publisher" content="https://orbweave.example">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://orbweave.example/reloom/">
+    <meta name="twitter:title" content="Reloom: AI Condition Grading for Circular Commerce | Orbweave">
+    <meta name="twitter:description"
+        content="Conceptual case study: how AI condition grading helped an outdoor-gear resale marketplace grow resale 28% and halve abandoned trade-ins.">
+    <meta name="twitter:image" content="https://orbweave.example/logo.png">
+    <meta name="twitter:site" content="@your_handle">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+
+    <!-- Structured Data - Case Study -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Reloom: AI Condition Grading Success Story",
+        "description": "How AI condition grading grew resale by 28% and cut abandoned trade-ins by half.",
+        "author": {
+            "@type": "Organization",
+            "name": "Orbweave",
+            "url": "https://orbweave.example"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Orbweave",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://orbweave.example/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://orbweave.example/reloom/"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "AI Condition Grading Technology"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="../index.html" class="logo-link">
+            <img src="../logo.png" alt="Orbweave" style="height:100px;width:auto;">
+        </a>
+        <a href="../index.html" class="back-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back to Home
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">✨</span>
+                <span>AI-Powered Circular Commerce</span>
+            </div>
+            <h1 class="hero-title">
+                Boost Trade-Ins and Resale with <span class="gradient-text">AI Condition Grading</span>: Reloom Saw <span class="highlight-stat">28%</span> Resale Growth
+            </h1>
+            <p class="hero-subtitle">
+                Discover how AI condition grading helped outdoor-gear marketplace Reloom halve abandoned trade-ins and keep thousands of jackets, tents and boots in use instead of landfill.
+            </p>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-value">28%</div>
+                    <div class="stat-label">Revenue Growth</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">50%</div>
+                    <div class="stat-label">Less Abandonment</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$450K</div>
+                    <div class="stat-label">Added Revenue</div>
+                </div>
+            </div>
+
+            <a href="#solution" class="hero-cta">
+                <span>Explore the AI Grading Solution</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="hero-visual">
+            <div class="visual-glow"></div>
+            <div class="phone-mockup">
+                <img src="hero-visual.webp" alt="AI condition grading interface (illustration)" class="mockup-image">
+                <div class="floating-tag tag-1">AI Powered</div>
+                <div class="floating-tag tag-2">98% Accuracy</div>
+                <div class="floating-tag tag-3">Instant Results</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Challenge Section -->
+    <section class="section challenge" id="challenge">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Challenge</span>
+                <h2 class="section-title">Grading Uncertainty Was <span class="gradient-text">Costing Trade-Ins</span></h2>
+            </div>
+
+            <div class="challenge-intro">
+                <p class="large-text">
+                    Reloom, a growing repair-and-resale marketplace for outdoor gear, attracted <strong>50,000 monthly
+                        visitors</strong>
+                    eager to trade in or buy pre-loved gear. But slow, manual grading meant most trade-ins were abandoned halfway.
+                </p>
+            </div>
+
+            <div class="pain-points">
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <div class="pain-stat">65%</div>
+                    <div class="pain-label">Trade-In Abandonment</div>
+                    <p class="pain-desc">Sellers waited days for a quote because every item had to be inspected by hand.</p>
+                </div>
+
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M3 3l18 18M10.5 10.5a3 3 0 104.5 4.5" />
+                            <path d="M12 3v4M3 12h4M12 21v-4M21 12h-4" />
+                        </svg>
+                    </div>
+                    <div class="pain-stat">25%</div>
+                    <div class="pain-label">Return Rate</div>
+                    <p class="pain-desc">Buyers returned items whose condition didn't match the listing, adding shipping emissions.</p>
+                </div>
+
+                <div class="pain-card">
+                    <div class="pain-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                        </svg>
+                    </div>
+                    <div class="pain-stat">300+</div>
+                    <div class="pain-label">Weekly Support Inquiries</div>
+                    <p class="pain-desc">Support overwhelmed with "what's my jacket worth?" questions every single week.</p>
+                </div>
+            </div>
+
+            <div class="quote-block">
+                <div class="quote-icon">"</div>
+                <blockquote>
+                    We exist to keep good gear in use, but grading uncertainty was costing us trade-ins. People wanted a fair quote in seconds, not a week of back-and-forth.
+                </blockquote>
+                <div class="quote-author">
+                    <div class="author-avatar">RM</div>
+                    <div class="author-info">
+                        <strong>Co-founder</strong>
+                        <span>Reloom Marketplace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution Section -->
+    <section class="section solution" id="solution">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Solution</span>
+                <h2 class="section-title">Advanced <span class="gradient-text">Condition Grading</span> Technology</h2>
+            </div>
+
+            <div class="solution-hero">
+                <div class="solution-content">
+                    <p class="large-text">
+                        Orbweave introduced our <strong>Condition Grading for Circular Commerce</strong>—a vision model that inspects photos for wear, tears and missing parts, then returns a fair trade-in quote.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            Detects wear, stains, delamination and missing parts
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            Trained on diverse gear across brands, fabrics and ages
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            Generates quotes from phone photos in seconds
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            Routes each item to repair, resale or recycling
+                        </li>
+                    </ul>
+                </div>
+                <div class="solution-visual">
+                    <div class="ai-process">
+                        <div class="process-step">
+                            <div class="step-icon">📷</div>
+                            <span>Snap Your Gear</span>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-icon">🤖</div>
+                            <span>AI Grading</span>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-icon">✨</div>
+                            <span>Get Your Quote</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="integration-section">
+                <h3 class="subsection-title">Seamless Shopify Integration</h3>
+                <p class="integration-text">
+                    We integrated it seamlessly into their Shopify store: sellers upload a few photos, pick a category, and see a graded quote instantly—no extra apps required.
+                </p>
+            </div>
+
+            <div class="workflow-grid">
+                <h3 class="subsection-title">Integrated Loop Toolkit</h3>
+                <div class="workflow-cards">
+                    <div class="workflow-card">
+                        <div class="workflow-icon">📧</div>
+                        <h4>Email Automation</h4>
+                        <p>Post-trade-in follow-ups like "Your jacket found a new owner—here's the CO₂ you saved."</p>
+                    </div>
+                    <div class="workflow-card">
+                        <div class="workflow-icon">🚀</div>
+                        <h4>Phased Rollout</h4>
+                        <p>Started with jackets and tents, then expanded site-wide with A/B testing against manual grading.</p>
+                    </div>
+                    <div class="workflow-card">
+                        <div class="workflow-icon">📊</div>
+                        <h4>Real-time Dashboard</h4>
+                        <p>Live tweaks and improvements, like better accuracy on technical fabrics and zips.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Impact Section -->
+    <section class="section impact" id="impact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Impact</span>
+                <h2 class="section-title">Results That <span class="gradient-text">Speak Volumes</span></h2>
+            </div>
+
+            <div class="impact-hero">
+                <p class="large-text centered">
+                    Results came quickly. Within the first quarter, Reloom saw transformative improvements across all key metrics.
+                </p>
+            </div>
+
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h4 class="chart-title">Trade-In Abandonment</h4>
+                    <div class="bar-chart" id="abandonmentChart">
+                        <div class="bar-group">
+                            <div class="bar-wrapper">
+                                <div class="bar bar-before" data-value="65">
+                                    <span class="bar-label">65%</span>
+                                </div>
+                            </div>
+                            <span class="bar-category">Before</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-wrapper">
+                                <div class="bar bar-after" data-value="32">
+                                    <span class="bar-label">32%</span>
+                                </div>
+                            </div>
+                            <span class="bar-category">After</span>
+                        </div>
+                    </div>
+                    <div class="chart-callout">
+                        <span class="callout-value">-51%</span>
+                        <span class="callout-label">Reduction</span>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h4 class="chart-title">ROI Breakdown</h4>
+                    <div class="pie-chart-container">
+                        <div class="pie-chart" id="roiChart">
+                            <svg viewBox="0 0 100 100" class="pie-svg">
+                                <circle class="pie-segment segment-1" cx="50" cy="50" r="40" stroke-dasharray="0 251.2"
+                                    stroke-dashoffset="0" />
+                                <circle class="pie-segment segment-2" cx="50" cy="50" r="40" stroke-dasharray="0 251.2"
+                                    stroke-dashoffset="0" />
+                                <circle class="pie-segment segment-3" cx="50" cy="50" r="40" stroke-dasharray="0 251.2"
+                                    stroke-dashoffset="0" />
+                            </svg>
+                            <div class="pie-center">
+                                <span class="pie-total">$570K</span>
+                                <span class="pie-label">Total Impact</span>
+                            </div>
+                        </div>
+                        <div class="pie-legend">
+                            <div class="legend-item">
+                                <span class="legend-color color-1"></span>
+                                <span>Resale Growth: $450K</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color color-2"></span>
+                                <span>Return Savings: $120K</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color color-3"></span>
+                                <span>Carbon Reduction: 12%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">📈</div>
+                    <div class="metric-value" data-target="28">0%</div>
+                    <div class="metric-label">Trade-In Completion Increase</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">⏱️</div>
+                    <div class="metric-value" data-target="40">0%</div>
+                    <div class="metric-label">More Items Listed</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">📦</div>
+                    <div class="metric-value" data-target="18">0%</div>
+                    <div class="metric-label">Fewer Returns</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">🔄</div>
+                    <div class="metric-value" data-target="22">0%</div>
+                    <div class="metric-label">More Repeat Sellers</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-glow"></div>
+                <div class="testimonial-content">
+                    <div class="testimonial-quote">"</div>
+                    <blockquote>
+                        Orbweave's grading transformed how people trade with us—they finally get a fair quote in seconds. It's kept more gear in use than we ever imagined!
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <span>RM</span>
+                        </div>
+                        <div class="author-details">
+                            <strong>Co-founder</strong>
+                            <span>Reloom Marketplace</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Orbweave Section -->
+    <section class="section why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-content">
+                <div class="section-header left-aligned">
+                    <span class="section-label">Why Orbweave?</span>
+                    <h2 class="section-title">Your Partner in <span class="gradient-text">Circular Innovation</span></h2>
+                </div>
+                <p class="why-text">
+                    Our condition grading stands out for resale platforms, but it pairs perfectly with
+                    <strong>repair-guide assistants</strong> or <strong>impact tracking for every item</strong>.
+                </p>
+                <p class="cta-text">
+                    Ready to keep more products in use and out of landfill?
+                </p>
+                <a href="../contact.html" class="demo-cta">
+                    <span>Book a Demo</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+            <div class="why-us-visual">
+                <div class="service-cards">
+                    <div class="service-card">
+                        <div class="service-icon">🔍</div>
+                        <h4>Condition Grading</h4>
+                        <p>AI-powered wear detection</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💬</div>
+                        <h4>Repair Assistants</h4>
+                        <p>Step-by-step fix guidance</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h4>Impact Tracking</h4>
+                        <p>CO₂ saved per item</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-nav">
+                <a href="#" class="footer-back">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Back to All Case Studies
+                </a>
+            </div>
+
+            <div class="footer-disclaimer">
+                <p>Conceptual example with hypothetical metrics for illustration.</p>
+            </div>
+
+            <div class="related-studies">
+                <span class="related-label">Related Case Studies:</span>
+                <div class="related-links">
+                    <a href="#" class="related-link">
+                        <span class="related-icon">💧</span>
+                        Tidewell (Water AI)
+                    </a>
+                    <a href="#" class="related-link">
+                        <span class="related-icon">🌳</span>
+                        Canopy Commons (Urban Heat AI)
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="Orbweave" style="height:200px;width:auto;">
+                    </a>
+                </div>
+                <p class="copyright">© 2026 Orbweave. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "orbweave-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Orbweave — a conceptual circular-systems studio website: scroll-scrubbed hero, five case studies, an AI chat widget and a contact form API.",
+  "license": "MIT",
+  "author": "Vansh Bagga",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "node scripts/check-links.mjs",
+    "start": "node scripts/serve.mjs",
+    "preview": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@ai-sdk/groq": "^3.0.1",
+    "ai": "^6.0.3",
+    "resend": "^4.0.0"
+  }
+}
